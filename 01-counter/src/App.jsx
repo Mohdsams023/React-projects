@@ -1,35 +1,25 @@
+import React from 'react'
 import { useState } from 'react'
-import './App.css'
+const App = () => {
+    const [Color, setColor] = useState('') 
+    return (
+     <div className='w-full h-screen duration-200' style={{backgroundColor: Color}}>
 
-function App() {
-  const [Counter, setCounter] = useState(0)
-  // let Counter = 4;
-   const Addvalue = () => {   
-       if (Counter < 20) {
-           setCounter(Counter + 1)
-       }  
-      
-      
-   };
-
-   const Removevalue = () => {
-       if (Counter > 0) {
-           setCounter(Counter - 1)
-       }
-       
-        
-    }
-  return (
-    <>
-     <div className='flex items-center flex-col justify-center m-10'>
-      <h1>React Hooks</h1>
-      <h2>Counter Value : {Counter}</h2>
-      <button onClick={Addvalue} className='bg-black text-white p-2 m-3'>Add Value</button>
-      <button onClick={Removevalue} className='bg-black text-white p-2 m-3'>Decrease Value</button>
-    </div>
-
-    </>
-  )
+        <div className='fixed w-full flex flex-wrap justify-center bottom-10 inset-x px-2'>
+            <div className='flex justify-center flex-wrap bg-white rounded-2xl shadow-lg p-2 '>
+                <button onClick={() => setColor('red')} style={{backgroundColor: 'red'}} className=' m-2 p-2 px-3 cursor-pointer rounded-lg text-white shadow-lg'>Red</button>
+                <button onClick={() => setColor('Green')} style={{backgroundColor: 'Green'}} className=' m-2 p-2 px-3 cursor-pointer rounded-lg text-white shadow-lg'>Green</button>
+                <button onClick={() => setColor('crimson')} style={{backgroundColor: 'crimson'}} className=' m-2 p-2 px-3 cursor-pointer rounded-lg text-white shadow-lg'>crimson</button>
+                <button onClick={() => setColor('purple')} style={{backgroundColor: 'purple'}} className=' m-2 p-2 px-3 cursor-pointer rounded-lg text-white shadow-lg'>purple</button>
+                <button onClick={() => setColor('black')} style={{backgroundColor: 'black'}} className=' m-2 p-2 px-3 cursor-pointer rounded-lg text-white shadow-lg'>black</button>
+                <button onClick={() => setColor('orange')} style={{backgroundColor: 'orange'}} className=' m-2 p-2 px-3 cursor-pointer rounded-lg text-white shadow-lg'>orange</button>
+                <button onClick={() => setColor('blue')} style={{backgroundColor: 'blue'}} className=' m-2 p-2 px-3 cursor-pointer rounded-lg text-white shadow-lg'>blue</button>
+                <button onClick={() => setColor('skyblue')} style={{backgroundColor: 'skyblue'}} className=' m-2 p-2 px-3 cursor-pointer rounded-lg text-red-600 shadow-lg'>skyblue</button>
+            </div>
+        </div>
+     </div>
+    )
+  
 }
 
 export default App
