@@ -1,0 +1,16 @@
+.sidebar {
+    width: 15%;
+    position: fixed;
+    height: 100%;
+    top: 0; /* Position at the top */
+    left: 0; /* Position on the left */
+    padding: 20px;
+    z-index: 1000;
+    border-right: 2px solid #e5e5e5; /* Add border to the right */
+}
+
+.title {
+    font-weight: normal;
+    font-size: 20px;
+}
+/* Add additional styles as needed */

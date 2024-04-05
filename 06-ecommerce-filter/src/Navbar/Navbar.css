@@ -1,0 +1,50 @@
+.nav-container {
+    height: 50px; /* Adjust height as needed */
+    margin-left: 15rem;
+    border-bottom: 2px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+   
+}
+
+.input-btn {
+    height: 30px;
+    width: 18rem;
+    border-radius: 5px;
+    border: 1px solid rgb(149, 167, 185);
+    outline: none;
+    /* Consider adding padding for better input field appearance */
+    padding: 0 10px;
+    /* Consider adding transition for smoother hover effect */
+    transition: border-color 0.3s ease;
+}
+
+.input-btn:hover {
+    border-color: rgb(237, 46, 78);
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-icons {
+    font-size: 25px;
+    color: rgb(74, 79, 85);
+    font-weight: 700;
+    width: 1.5rem;
+    height: 1.5rem;
+    /* Consider adding cursor pointer for better interaction */
+    cursor: pointer;
+}
+
+/* Add hover effect for better interactivity */
+.nav-icons:hover {
+    color: rgb(237, 46, 78);
+   
+    border-radius: 50%; /* Makes the icons appear more interactive */
+}

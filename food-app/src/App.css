@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* horizontal-offset vertical-offset blur-radius spread-radius color */
+}
+
+.logo span {
+  font-size: 50px;
+  font-style: italic;
+  color:rgb(222, 147, 7);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+}
+
+.nav a:hover{
+  color:rgb(227, 149, 4);
+  text-decoration: underline;
+}
+
+input {
+  height: 35px;
+  width: 300px;
+  border-radius: 10px;
+  border: 2px solid rgb(227, 149, 4);
+  
+}
+
+button {
+  background-color: black;
+  padding: 10px 20px;
+  color: white;
+  margin: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+
+.restorent-list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.restorent-card {
+  width: 20%;
+  margin: 20px auto;
+ 
+  
+}
+
+.restorent-card img {
+  width: 200px;
+  border-radius: 10px;
+}

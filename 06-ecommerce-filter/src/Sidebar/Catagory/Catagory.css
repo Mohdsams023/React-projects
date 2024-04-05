@@ -1,0 +1,10 @@
+.catagory-container {
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+.checkmark {
+    margin-right: 10px;
+}

@@ -1,0 +1,19 @@
+.btns-container {
+    margin-left: 17rem;
+}
+
+.btns {
+    background-color: white;
+    color: grey;
+    outline: none;
+    border: 1px solid grey;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btns:hover{
+    background-color: grey;
+    color: white;
+}
