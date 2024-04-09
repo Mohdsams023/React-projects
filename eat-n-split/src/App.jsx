@@ -1,4 +1,6 @@
-import Friends from "./Components/Friends"
+import BillSplit from "./Components/BillSplit"
+import FriendsList from "./Components/FriendsList"
+
 
 
 function App() {
@@ -6,7 +8,11 @@ function App() {
 
  return (
   <>
-  <Friends />
+  <div className="flex flex-col md:flex-row justify-center item-center gap-20 mx-20 my-20">
+  <FriendsList />
+  <BillSplit />
+  </div>
+ 
   </>
  )
 }
